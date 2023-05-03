@@ -41,35 +41,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/*class SecondRoute extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Grupos"),
-      ),
-      body: ListView.builder(
-        itemCount: event.group.length,
-        itemBuilder: (context, index) {
-          final group = event.group[index];
-          return ListTile(
-            leading: Image.asset(event.group[index].logo),
-            title: Text('Id: ${group.id} name: ${group.name}'),
-            subtitle: Text(group.description),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => SecondRoute()),
-              );
-              print('Se seleccionó el grupo ${group.name}');
-            },
-          );
-        },
-      ),
-    );
-  }
-}*/
-
 class GroupListRoute extends StatelessWidget {
   final Event event;
 
